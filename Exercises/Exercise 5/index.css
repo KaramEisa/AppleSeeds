@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 2px;
+}
+
+#desc {
+    height: 100px;
+    display: flex;
+    align-self: center;
+}
+
+#terms {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tos {
+    display: inline-block;
+}
