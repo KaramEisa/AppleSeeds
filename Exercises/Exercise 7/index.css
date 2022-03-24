@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Header */
+header {
+    background-color: rgb(53, 0, 26);
+    margin: 2px;
+    border-radius: 4px;
+}
+
+.header {
+    text-align: center;
+    color: white;
+}
+
+/* Side */
+aside {
+    background-color: rgb(194, 42, 118);
+    float: left;
+    margin: 2px;
+    padding-right: 20%;
+    padding-bottom: 90%;
+    border-radius: 4px;
+}
+
+/* Main */
+main {
+    background-color: indigo;
+    float: right;
+    margin: 2px;
+    padding-left: 58%;
+    padding-bottom: 88.7%;
+    border-radius: 4px;
+}
+
+/* footer */
+footer {
+    background-color: blueviolet;
+    margin: 2px;
+    border-radius: 4px;
+    clear: left;
+}
