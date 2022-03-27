@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+body {
+    box-sizing: border-box;
+    background-color: turquoise;
+}
+
+.text {
+    color: white;
+}
+
+/* Flat */
+.flat {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.flatOne {
+    background-color: lightgreen;
+    height: 50px;
+    width: 100px;
+}
+
+.flatTwo {
+    background-color: red;
+    height: 25px;
+    width: 75px;
+}
+
+.flatThree {
+    background-color: lightblue;
+    width: 50px;
+}
+
+/* Round */
+.round {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.roundOne {
+    background-color: orange;
+    border-radius: 25px;
+    height: 50px;
+    width: 100px;
+}
+
+.roundTwo {
+    background-color: yellow;
+    border-radius: 25px;
+    height: 25px;
+    width: 75px;
+}
+
+.roundThree {
+    background-color: gray;
+    border-radius: 25px;
+    width: 50px;
+}
+
+/* Flat Ghost */
+
+.flatGhost {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.flatGhostOne {
+    background-color: transparent;
+    height: 50px;
+    width: 100px;
+}
+
+.flatGhostTwo {
+    background-color: transparent;
+    height: 25px;
+    width: 75px;
+}
+
+.flatGhostThree {
+    background-color: transparent;
+    width: 50px;
+}
+
+/* Round Ghost */
+.roundGhost {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.roundGhostOne {
+    background-color: transparent;
+    border-radius: 25px;
+    height: 50px;
+    width: 100px;
+}
+
+.roundGhostTwo {
+    background-color: transparent;
+    border-radius: 25px;
+    height: 25px;
+    width: 75px;
+}
+
+.roundGhostThree {
+    background-color: transparent;
+    border-radius: 25px;
+    width: 50px;
+}
