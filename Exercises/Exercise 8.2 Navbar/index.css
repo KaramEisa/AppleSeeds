@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    padding: 20px 0;
+    background-color: violet;
+    position: fixed;
+    width: 100%;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav li a:hover {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+.brownBoxFiller {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    
+}
