@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    p {
+    font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    p {
+    font-size: 40px;
+}
+}
+
+@media screen and (max-width: 1200px) {
+    p {
+    font-size: 60px;
+    }
+}
+@media screen and (min-width: 1201px) {
+    p {
+    font-size: 80px;
+    }
+}
