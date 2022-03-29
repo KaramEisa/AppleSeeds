@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: black;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .container {
+        position: relative;
+        padding: 2rem;
+        /* border: red solid 1px; */
+      }
+
+      .border-top:after {
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: -10px;
+        height: 10px;
+        width: 10px;
+        border-top: red solid 3px;
+        border-left: red solid 3px;
+      }
+
+      .border-top:before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: -10px;
+        height: 10px;
+        width: 10px;
+        border-top: red solid 3px;
+        border-right: red solid 3px;
+      }
+
+      .border-bottom:after {
+        content: '';
+        position: absolute;
+        bottom: 20px;
+        left: -10px;
+        height: 10px;
+        width: 10px;
+        border-bottom: red solid 3px;
+        border-left: red solid 3px;
+      }
+
+      .border-bottom:before {
+        content: '';
+        position: absolute;
+        bottom: 20px;
+        right: -10px;
+        height: 10px;
+        width: 10px;
+        border-bottom: red solid 3px;
+        border-right: red solid 3px;
+      }
+
+      h2 {
+        color: white;
+      }
+
+      .container2 {
+        height: 100px;
+        width: 300px;
+        border: red solid 3px;
+      }
+      /* .container2::after {
+        content: '';
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container">
+        <span class="border-top"></span>
+        <h2>Cool border</h2>
+        <span class="border-bottom"></span>
+      </div>
+    </div>
+    <br />
+    <div class="container2"></div>
+  </body>
+</html>
