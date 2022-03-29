@@ -1,0 +1,48 @@
+a::after {
+    content: "url('https://google.com')";
+}
+
+.parent {
+    margin-top: 50px;
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+    border: 1px red solid;
+    position: relative;
+}
+
+div:nth-child(1) {
+    position: absolute;
+    background-color: indigo;
+    height: 100px;
+    width: 50px; 
+}
+
+.parent:hover {
+    background-color: red;
+    border: black 5px cornered;
+}
+
+.e4 {
+    margin-top: 50px;
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+    border: 1px red solid;
+    position: relative;
+}
+
+div:nth-child(1) {
+    position: absolute;
+    background-color: indigo;
+    height: 100px;
+    width: 50px; 
+}
+
+.e4:hover {
+    background-color: red;
+    border: black 5px cornered;
+}
+
+
+
