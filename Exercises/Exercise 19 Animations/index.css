@@ -1,0 +1,191 @@
+/* Resetting CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+ul, a {
+    list-style: none;
+    text-decoration: none;
+}
+/***********************************/
+
+/* Root Colors  */
+:root {
+    --white-text: #ffffff;
+    --blue-text: blue;
+    --red-text: red;
+    --green-text: green;
+    --yellow-text: yellow;
+    --brown-text: brown;
+    --navbar-bg: midnightblue;
+    
+}
+
+/***********************************/
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--navbar-bg);
+}
+
+.navbar-main {
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.navbar-main a {
+    color: var(--white-text);
+}
+
+.navbar-main li {
+        margin-right: 15px;
+}
+li::before{
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: tomato;
+    left: 0;
+    bottom: -7px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    animation: animateHover 1s 1s linear;
+}
+
+
+li:hover {
+    animation-name: animateHover;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+}
+
+@keyframes animateHover {
+    from {
+        
+    }
+}
+/*   */
+.containerA {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 40vh;
+    background-color: var(--brown-text);
+
+}
+
+
+.box1 {
+    height: 100px;
+    width: 100px;
+    margin-top: 100px;
+    background-color: var(--red-text);
+    position: relative;
+
+}
+
+.box2 {
+    height: 100px;
+    width: 100px;
+    margin-top: 100px;
+    background-color: var(--blue-text);
+    
+}
+
+.box2:hover {
+    animation-name: move;
+    animation-duration: 2s;
+    overflow: visible;
+    
+}
+
+@keyframes move {
+    from {
+        background-color: var(--blue-text);
+    } to {
+        background-color: var(--yellow-text);
+        transform: translateX(-100px);
+        transition: ease-in-out;
+    }
+}
+
+
+.containerB {
+    display: flex;
+    height: 20vh;
+    background-color: var(--green-text);
+    position: relative;
+    /* animation-name: ; */
+}
+
+/* Button1  */
+.button1 {
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: hotpink;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.button1:hover {
+    animation-name: tweet;
+}
+
+
+@keyframes tweet {
+    from {
+        background-color: var(--blue-text);
+    } to {
+        background-color: var(--yellow-text);
+        transform: translateY(-100px);
+        transition: ease-in-out;
+    }
+}
+
+
+/*                                 */
+.button2 {
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: var(--yellow-text);
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.button3 {
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: var(--blue-text);
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.button4 {
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: var(--brown-text);
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
