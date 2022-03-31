@@ -1,0 +1,57 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+  }
+  .rotate {
+    padding: 2rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+  }
+  .rotate::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: yellow;
+      z-index: -1;
+      transform: rotate(-90deg);
+      transform-origin: top left;
+      transition: all 0.4s;
+    }
+    .rotate:hover::after {
+        transform: rotate(0);
+    }
+    
+    
+    
+    .translate {
+        padding: 2rem;
+        font-size: 1rem;
+        border: 1px solid black;
+        position: relative;
+        overflow: hidden;
+    }
+    .translate::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: yellow;
+        z-index: 2;
+        transform: translateX(-100%); 
+        transform-origin:center;
+        transition: width 2s;
+      }
+      .translate:hover::after {
+        transform: rotate(0);
+    }

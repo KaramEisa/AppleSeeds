@@ -75,7 +75,7 @@ li:hover {
         
     }
 }
-/*   */
+/************************************/
 .containerA {
     display: flex;
     flex-direction: row;
@@ -129,6 +129,7 @@ li:hover {
     /* animation-name: ; */
 }
 
+
 /* Button1  */
 .button1 {
     margin-top: 10px;
@@ -140,23 +141,7 @@ li:hover {
     font-size: 1.5rem;
 }
 
-.button1:hover {
-    animation-name: tweet;
-}
-
-
-@keyframes tweet {
-    from {
-        background-color: var(--blue-text);
-    } to {
-        background-color: var(--yellow-text);
-        transform: translateY(-100px);
-        transition: ease-in-out;
-    }
-}
-
-
-/*                                 */
+/************************************/
 .button2 {
     margin-top: 10px;
     margin-left: 50px;
@@ -165,7 +150,34 @@ li:hover {
     width: 100px;
     text-align: center;
     font-size: 1.5rem;
+    border: 3px solid black;
+    position: relative;
+    /* overflow: hidden; */
 }
+
+  .button2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+    z-index: -1;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    transition: all 0.4s;
+  }
+  .button2:hover::after {
+    transform: rotate(0);
+  }
+
+
+
+
+
+
+
 
 .button3 {
     margin-top: 10px;
