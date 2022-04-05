@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: cadetblue;
+    display: flex;
+    padding: 1rem 0;
+}   
+
+.nav {
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 1rem;
+}
+
+.nav-item:hover {
+    background-color: coral;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 4rem;
+}
+ .name {
+     margin-top: 4rem;
+     margin-left: 40rem;
+ }
+ main {
+ 
+ }
+.container {
+    margin-top: 2rem;
+    background-color: darkcyan;
+    margin-left: 35rem;
+    margin-right: 35rem;
+    border-radius: 50px;
+    padding: 1rem;
+}
+
+
+@media screen (max-width :768px) {
+    .nav {
+        
+    }
+}
