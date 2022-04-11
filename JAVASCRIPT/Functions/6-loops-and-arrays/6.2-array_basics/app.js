@@ -33,17 +33,17 @@ people.push("Karam");
 console.log(people);
 
 // ----------------------------------------------------------------
-// ? Using a loop, iterate through this array and after console.log-ing "Mary", exit from the loop.
+// ? 6. Using a loop, iterate through this array and after console.log-ing "Mary", exit from the loop.
 
 for (let i = 0; i < 1; i++) {
     console.log(people[i]);
 }
 
 //-----------------------------------------------------------------------
-// ? Write the command to make a copy of the array using slice. The copy should NOT include "Mary" or "Matt".
+// ? 7. Write the command to make a copy of the array using slice. The copy should NOT include "Mary" or "Matt".
 
-// const people2 = people;
-// console.log(people2.slice(1 , 2));
+const people2 = people;
+console.log(people2.slice(2 ,-1));
 
 //--------------------------------------------------------------------------
 // ? 8. Write the command that gives the indexOf where "Mary" is located.
@@ -67,5 +67,5 @@ console.log(people3);
 // ? Create a new variable called withBob and set it equal
 // ? to the people array concatenated with the string of "Bob".
 
-const withBob = people + ",Bob";
+const withBob = people.concat("Bob");
 console.log(withBob);
