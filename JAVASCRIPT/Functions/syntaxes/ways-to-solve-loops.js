@@ -80,8 +80,35 @@
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-            
-          
-            
-            
-            
+
+// ! for (... of ) iterates over the values 
+
+// const jeopardyWinnings = {
+//     regularPlay: 2522700,
+//     watsonChallenge: 300000,
+//     tournamentOfChampions: 500000,
+//     battleOfTheDecades: 100000
+// }
+
+// ? to get the keys and values with for (... in)
+// for (let prop in jeopardyWinnings) {
+//     console.log(prop);
+//     console.log(jeopardyWinnings[prop]);
+// }
+
+// ? to get total values
+// let total = 0;
+// for (let prop in jeopardyWinnings){
+//     total += (jeopardyWinnings[prop]);
+// }
+
+// console.log(`Ken Jennings Total Earnings: ${total}`);
+
+// ! do not use this ever with array
+// for (let k in [88,99,77,66]) {
+//     console.log(k);
+// }
+
+// ------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------
