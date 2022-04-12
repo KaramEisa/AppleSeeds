@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+.header {
+    display:flex;
+    width: 100%;
+}
+
+.navbar {
+    display:flex;
+    width:100%;
+}
+
+.social-icons {
+    display:flex;
+    justify-content: flex-end;
+    width:100%;
+}
+
+.uil-bars {
+    color: red;
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+.seperator {
+    border-top: .8rem solid red;
+    width: 80%;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-side {
+    width: 50%;
+    margin: 3rem;
+}
+
+.hi {
+    font-size: 5rem;
+    margin-top:3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+}
+
+.header-desc {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+
+
