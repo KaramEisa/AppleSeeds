@@ -96,6 +96,7 @@ console.log("--5--");
 //* whole string capitalized.
     
     const str = 'audio jungle is a the worst thing ever';
+    
 const capitalize = (str) => {
   const arr = str.split(" ");
   str = arr.map((word) => word.toUpperCase()).join(" ");
@@ -108,22 +109,48 @@ console.log("--6--");
 //* Write a function called shiftLetters that takes a string as an argument and return’s an 
 //* encoded string with each letter shifted down the alphabet by one.
 
-function shiftLetters(text) {
-    let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-        'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-    let encoded = [];
-    let textSplit = text.split();
-    for (let i = 0; i < textSplit.length; i++) {
-        for (let j = 0; j < alphabet.length; j++) {
-            if (textSplit[i] === alphabet[j]) {
-                encoded.push(alphabet[j - 1]);
-            }
-        }
-        if (textSplit[i] === 'a') {
-            encoded.push('à');
-        }
+// function shiftLetters(text) {
+//     let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+//         'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+//     let encoded = [];
+//     let textSplit = text.split('');
+//     for (let i = 0; i < textSplit.length; i++) {
+//         for (let j = 0; j < alphabet.length; j++) {
+//             if (textSplit[i] === alphabet[j]) {
+//                 encoded.push(alphabet[j - 1]);
+//             }
+//         }
+//         if (textSplit[i] === 'a') {
+//             encoded.push('à');
+//         }
+//     }
+//     return encoded.join('');
+// }
+
+// console.log(shiftLetters("karam"));
+
+
+const shiftLetters = function(string){
+    return string.split('').map(letter => {
+    let charCode = letter.charCodeAt(0)
+    charCode -= 1;
+    letter = String.fromCharCode(charCode)
+    return letter
+    }).join('')
     }
-    return encoded.join('');
+    
+    console.log(shiftLetters('abcxyz')) // => "bcdyz{"
+
+
+//--------------------------------------------------------------------------------------
+console.log("--7--");
+//* Create a function called swapCase that takes a string as an argument and returns a
+//* string that every other word is capitalized. (you can use the fifth’s exercise's function
+//* (keep it dry)
+
+let str1 = 'hello world how ya doing?';
+function toUpperCase(str) {
+  return str.split(' ').map((v, i) => i % 2 == 0 ? v.toLowerCase() : v.toUpperCase()).join(' ');
 }
 
-console.log(shiftLetters("karam"));
+console.log(toUpperCase(str1));

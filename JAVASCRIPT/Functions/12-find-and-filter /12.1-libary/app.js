@@ -4,9 +4,6 @@
 //* Write a JavaScript function that receives the following library object as 
 //* an input and displays the books that can be read (the reading status is true). 
 //* Log the book name, author name and reading status .
-
-
-
 var library = [
     {
       author: "Bill Gates",
