@@ -44,14 +44,36 @@ console.log("--2--")
 
 // 2. Select all elements using querySelector method.
 let myHeader1 = document.querySelector("h1");
-let myParagraph1 = document.querySelector("h1");
-let myLink1 = document.querySelector("h1");
-let myImg1 = document.querySelector("h1");
-let myClassedDiv1 = document.querySelector("h1");
-let myHeader1 = document.querySelector("h1");
-let myIdDiv1 = document.querySelector("h1");
-let myInputs1 = document.querySelector("h1");
+let myParagraph1 = document.querySelector("p");
+let myLink1 = document.querySelector("a");
+let myImg1 = document.querySelector("img");
+let myClassedDiv1 = document.querySelector(".x");
+let myIdDiv1 = document.querySelector(".y");
+let myInputs0 = document.querySelectorAll("input")[0];
+let myInputs1 = document.querySelectorAll("input")[1];
+let myInputs2 = document.querySelectorAll("input")[2];
+    
+console.log(myHeader1);
+console.log(myParagraph1);
+console.log(myLink1);
+console.log(myImg1);
+console.log(myClassedDiv1);
+console.log(myIdDiv1);
+console.log(myInputs0);
+console.log(myInputs1);
+console.log(myInputs2);
 
 
+// 3. Select all inputs and iterate over them with
+//  the forEach method and print each one to the console.
+//  Using both querySelectorAll and getElementsByTagName.
+    const allElementsUsingQuerySelector = [...document.querySelectorAll('*')];
+    allElementsUsingQuerySelector.forEach((element) => console.log(element));
+
+    const allElementsNOTUsingQuerySelector = [
+      ...document.getElementsByName('*'),
+    ];
+    
+    allElementsNOTUsingQuerySelector.forEach((element) => console.log(element));
  </script>
 </html>
