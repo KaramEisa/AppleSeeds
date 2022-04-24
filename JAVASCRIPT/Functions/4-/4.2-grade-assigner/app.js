@@ -12,4 +12,8 @@ const numScore = (score) => {
     } else {
       return "Score must be a number between 0 and 100";
     }
-  };
+};
+  
+let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = txt.length;
+console.log(length);

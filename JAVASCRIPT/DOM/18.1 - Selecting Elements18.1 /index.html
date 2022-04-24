@@ -1,0 +1,57 @@
+<!DOCTYPE html> <html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0" /> <title>Document</title>
+</head> 
+<body>
+<h1>Header</h1>
+ <p>Paragraph</p>
+<a href="#">link</a>
+<img src="" alt="" />
+<div class="x">Div with a class</div> 
+<div id="y">Div with an id</div> 
+<input type="text" />
+<input type="text" />
+<input type="text" /> 
+
+</body>
+
+<script>
+//your js code here
+
+console.log("--1--")
+
+// 1. Select all elements not using the querySelector method.
+
+let myHeader = document.getElementsByTagName("h1");
+let myParagraph = document.getElementsByTagName("p");
+let myLink = document.getElementsByTagName("a");
+let myImg = document.getElementsByTagName("img");
+let myClassedDiv = document.getElementsByClassName("x");
+let myIdDiv = document.getElementById("y");
+let myInputs = document.getElementsByClassName("text");
+console.log(myHeader);
+console.log(myParagraph);
+console.log(myLink);
+console.log(myImg);
+console.log(myClassedDiv);
+console.log(myIdDiv);
+console.log(myInputs);
+
+console.log("--2--")
+
+// 2. Select all elements using querySelector method.
+let myHeader1 = document.querySelector("h1");
+let myParagraph1 = document.querySelector("h1");
+let myLink1 = document.querySelector("h1");
+let myImg1 = document.querySelector("h1");
+let myClassedDiv1 = document.querySelector("h1");
+let myHeader1 = document.querySelector("h1");
+let myIdDiv1 = document.querySelector("h1");
+let myInputs1 = document.querySelector("h1");
+
+
+ </script>
+</html>
